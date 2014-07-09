@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="StackImplementation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2y-6R-Jmf">
+                                <rect key="frame" x="197" y="70" width="87" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="vwr-sg-3kW"/>
+                                    <constraint firstAttribute="height" constant="60" id="xeW-84-cee"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Og6-8u-BBm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q4-es-xiR">
+                                <rect key="frame" x="197" y="130" width="87" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Bh3-t3-WUX"/>
+                                    <constraint firstAttribute="width" constant="87" id="hKG-8Q-Jsg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="Pop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z3W-41-JVj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQE-lU-ddH">
+                                <rect key="frame" x="144" y="194" width="193" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="848-Bf-fNq"/>
+                                    <constraint firstAttribute="width" constant="193" id="qsu-y6-oX8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="Print Out Stack">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="printOutButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VXb-18-UUh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7q4-es-xiR" secondAttribute="centerX" id="Fw6-WB-VVE"/>
+                            <constraint firstAttribute="centerX" secondItem="qQE-lU-ddH" secondAttribute="centerX" id="G7N-Cb-9m7"/>
+                            <constraint firstAttribute="centerX" secondItem="U2y-6R-Jmf" secondAttribute="centerX" id="LdS-Vh-BQ3"/>
+                            <constraint firstItem="7q4-es-xiR" firstAttribute="top" secondItem="U2y-6R-Jmf" secondAttribute="bottom" id="RO8-JP-G5e"/>
+                            <constraint firstItem="qQE-lU-ddH" firstAttribute="top" secondItem="7q4-es-xiR" secondAttribute="bottom" constant="4" id="laH-lU-ALq"/>
+                            <constraint firstItem="U2y-6R-Jmf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="mmi-9A-2Fc"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="105"/>
+        </scene>
+    </scenes>
+</document>
